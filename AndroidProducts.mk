@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2019 LineageOS-16.0
+# Copyright (C) 2019 The TwrpBuilder Open-Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
