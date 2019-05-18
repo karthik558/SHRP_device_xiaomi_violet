@@ -20,11 +20,11 @@ PRODUCT_RELEASE_NAME := violet
 $(call inherit-product, build/target/product/embedded.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/omni/config/common_full_phone.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := violet
-PRODUCT_NAME := lineage_violet
+PRODUCT_NAME := omni_violet
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Xiaomi Redmi Note 7 Pro
 PRODUCT_MANUFACTURER := Xiaomi
