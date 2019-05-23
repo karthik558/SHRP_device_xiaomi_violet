@@ -112,5 +112,3 @@ TW_SCREEN_BLANK_ON_BOOT := true
 # Pre-decrypt
 TARGET_RECOVERY_DEVICE_MODULES += predecrypt.sh
 
-# Security Patch Hack to prevent Anti Rollback
-PLATFORM_SECURITY_PATCH := 2025-12-31
