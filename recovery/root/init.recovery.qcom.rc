@@ -36,9 +36,13 @@ on fs
     install_keyring
 
 on init
-    start hwservicemanager
+    mkdir /system/bin
+    mkdir /system/etc
+    symlink /system/etc /etc
+    symlink /sbin/busybox /system/bin/sh
+    symlink /vendor/manifest.xml /system/manifest.xml
 
-on boot
+    start hwservicemanager
     start predecrypt
 
 # Separate copy needed to use /sbin/linker64 instead of /system/bin/linker64
@@ -106,7 +110,7 @@ on property:crypto.ready=0
 on property:crypto.ready=1
     start sbinqseecomd
 
-on property:sys.listeners.registered=true
+on property:vendor.sys.listeners.registered=true
     start keymaster-4-0
     start gatekeeper-1-0
     start servicemanager
