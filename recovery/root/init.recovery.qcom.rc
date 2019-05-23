@@ -37,13 +37,22 @@ on fs
 
 on init
     start hwservicemanager
-    setprop crypto.ready 1
+
+on boot
+    start predecrypt
 
 # Separate copy needed to use /sbin/linker64 instead of /system/bin/linker64
 service sbinqseecomd /sbin/qseecomd
     user root
     group root
     disabled
+    seclabel u:r:recovery:s0
+
+service predecrypt /sbin/predecrypt.sh
+    oneshot
+    disabled
+    user root
+    group root
     seclabel u:r:recovery:s0
 
 service hwservicemanager /sbin/hwservicemanager

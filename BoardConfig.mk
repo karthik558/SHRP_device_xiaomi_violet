@@ -51,7 +51,7 @@ TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm6150
-TARGET_KERNEL_CONFIG := violet-perf_defconfig
+TARGET_KERNEL_CONFIG := vendor/violet-perf_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
 
 # QCOM
@@ -108,6 +108,9 @@ TW_DEFAULT_BRIGHTNESS := 180
 TW_Y_OFFSET := 80
 TW_H_OFFSET := -80
 TW_SCREEN_BLANK_ON_BOOT := true
+
+# Pre-decrypt
+TARGET_RECOVERY_DEVICE_MODULES += predecrypt.sh
 
 # Security Patch Hack to prevent Anti Rollback
 PLATFORM_SECURITY_PATCH := 2025-12-31
