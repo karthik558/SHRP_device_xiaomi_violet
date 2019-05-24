@@ -29,5 +29,3 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Xiaomi Redmi Note 7 Pro
 PRODUCT_MANUFACTURER := Xiaomi
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    fbe.data.wrappedkey=true
