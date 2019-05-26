@@ -121,6 +121,7 @@ TW_H_OFFSET := -80
 TW_SCREEN_BLANK_ON_BOOT := true
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
+TW_HAS_EDL_MODE := true
 
 # Hack: prevent anti rollback
 PLATFORM_SECURITY_PATCH := 2099-12-31
