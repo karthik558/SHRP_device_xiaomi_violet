@@ -1,8 +1,0 @@
-[
-	{
-		"remote":"github",
-		"repository":"adarshkushwah/android_kernel_xiaomi_sm6150",
-		"target_path":"kernel/xiaomi/sm6150",
-		"revision":"violet-p-oss"
-	}
-]
