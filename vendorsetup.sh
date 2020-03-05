@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018-2020 OrangeFox Recovery Project
+# Copyright (C) 2019-2020 OrangeFox Recovery Project
 #
 # This software is licensed under the terms of the GNU General Public
 # License version 2, as published by the Free Software Foundation, and
@@ -38,7 +38,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export OF_USE_NEW_MAGISKBOOT=1
 	export FOX_REPLACE_BUSYBOX_PS=1
         export OF_KEEP_DM_VERITY=1
-        export OF_SUPPORT_ALL_BLOCK_OTA_UPDATES="1"; # 004/005 - support block ota updates
+        export OF_SUPPORT_ALL_BLOCK_OTA_UPDATES="1"; # R10.1_1 - enable support for block-based ota updates on some custom ROMs
 
 	# let's see what are our build VARs
 	if [ -n "$FOX_BUILD_LOG_FILE" -a -f "$FOX_BUILD_LOG_FILE" ]; then
