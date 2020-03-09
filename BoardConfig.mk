@@ -129,7 +129,9 @@ TW_H_OFFSET := -80
 
 # Hack: prevent anti rollback
 PLATFORM_SECURITY_PATCH := 2099-12-31
-#
+PLATFORM_VERSION := 16.1.0
+
+# Extra Tags I can't list
 AB_OTA_UPDATER := false
 TARGET_HW_DISK_ENCRYPTION := true
 TARGET_CRYPTFS_HW_PATH := vendor/qcom/opensource/commonsys/cryptfs_hw
@@ -139,4 +141,5 @@ TW_USE_LEDS_HAPTICS := true
 TW_INCLUDE_FUSE_EXFAT := true
 TW_INCLUDE_FUSE_NTFS := true
 TARGET_OTA_ASSERT_DEVICE := violet
-#
+
+
