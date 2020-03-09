@@ -42,6 +42,10 @@ on init
     symlink /sbin/busybox /system/bin/sh
     symlink /vendor/manifest.xml /system/manifest.xml
 
+    # Workaround for setting AVB version
+    setprop ro.boot.avb_version 1.0
+    setprop ro.boot.vbmeta.avb_version ${ro.boot.avb_version}
+
     start hwservicemanager
     setprop crypto.ready 1
 
