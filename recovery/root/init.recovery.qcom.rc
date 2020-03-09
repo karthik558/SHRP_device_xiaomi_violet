@@ -108,3 +108,9 @@ on property:vendor.sys.listeners.registered=true
     start keymaster-4-0
     start gatekeeper-1-0
     start servicemanager
+
+on property:ro.build.version.release_orig=*
+    setprop ro.build.version.release ${ro.build.version.release_orig}
+
+on property:ro.build.version.security_patch_orig=*
+    setprop ro.build.version.security_patch ${ro.build.version.security_patch_orig}
