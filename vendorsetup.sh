@@ -38,15 +38,13 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export OF_USE_NEW_MAGISKBOOT=1
 	export FOX_REPLACE_BUSYBOX_PS=1
         export OF_KEEP_DM_VERITY=1
+        export OF_PATCH_AVB20=1
   	export OF_FBE_METADATA_MOUNT_IGNORE=1
 	export OF_CHECK_OVERWRITE_ATTEMPTS=1
 
 	# OTA for custom ROMs
         export OF_SUPPORT_ALL_BLOCK_OTA_UPDATES=1
         export OF_FIX_OTA_UPDATE_MANUAL_FLASH_ERROR=1
-
-        # metadata
-        #export BOARD_USES_METADATA_PARTITION=true
 
 	# let's see what are our build VARs
 	if [ -n "$FOX_BUILD_LOG_FILE" -a -f "$FOX_BUILD_LOG_FILE" ]; then
