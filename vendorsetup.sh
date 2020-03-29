@@ -31,7 +31,6 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export FOX_ASH_IS_BASH=1
 	export FOX_USE_NANO_EDITOR=1
 	export FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER=1
-	export OF_OTA_RES_DECRYPT=1
 	export FOX_USE_TAR_BINARY=1
 	export FOX_USE_ZIP_BINARY=1
 	export OF_FORCE_MAGISKBOOT_BOOT_PATCH_MIUI=1
@@ -41,10 +40,14 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
         export OF_PATCH_AVB20=1
   	export OF_FBE_METADATA_MOUNT_IGNORE=1
 	export OF_CHECK_OVERWRITE_ATTEMPTS=1
+	export OF_SKIP_MULTIUSER_FOLDERS_BACKUP=1
 
 	# OTA for custom ROMs
         export OF_SUPPORT_ALL_BLOCK_OTA_UPDATES=1
         export OF_FIX_OTA_UPDATE_MANUAL_FLASH_ERROR=1
+
+        # use system (ROM) fingerprint where available
+        export OF_USE_SYSTEM_FINGERPRINT=1
 
 	# let's see what are our build VARs
 	if [ -n "$FOX_BUILD_LOG_FILE" -a -f "$FOX_BUILD_LOG_FILE" ]; then
