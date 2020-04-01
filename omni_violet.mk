@@ -26,7 +26,7 @@ $(call inherit-product, vendor/omni/config/common.mk)
 PRODUCT_DEVICE := violet
 PRODUCT_NAME := omni_violet
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Xiaomi Redmi Note 7 Pro
+PRODUCT_MODEL := Redmi Note 7 Pro
 PRODUCT_MANUFACTURER := Xiaomi
 
 # HACK: Set vendor patch level

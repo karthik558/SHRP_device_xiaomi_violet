@@ -2,6 +2,7 @@
 # Copyright (C) 2019 The TwrpBuilder Open-Source Project
 #
 # Copyright (C) 2019-2020 The OrangeFox Recovery Project
+# Copyright (C) 2020 TWRP
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -60,19 +61,11 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 BOARD_KERNEL_SEPARATED_DTBO := true
-ifeq ($(FOX_BUILD_FULL_KERNEL_SOURCES),1)
-TARGET_KERNEL_SOURCE := kernel/xiaomi/violet
-TARGET_KERNEL_CONFIG := vendor/violet-perf_Fox_defconfig
-TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
-else
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image.gz-dtb
 BOARD_INCLUDE_RECOVERY_DTBO := true
 BOARD_BOOTIMG_HEADER_VERSION := 1
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset $(BOARD_RAMDISK_OFFSET) --tags_offset $(BOARD_KERNEL_TAGS_OFFSET) --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
-#PRODUCT_COPY_FILES += \
-#    $(TARGET_PREBUILT_KERNEL):kernel
-endif
 
 # fstab
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery.fstab
