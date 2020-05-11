@@ -52,7 +52,7 @@ BOARD_KERNEL_CMDLINE += ehci-hcd.park=3
 BOARD_KERNEL_CMDLINE += service_locator.enable=1
 BOARD_KERNEL_CMDLINE += androidboot.memcg=1
 BOARD_KERNEL_CMDLINE += earlycon=msm_geni_serial,0x880000
-BOARD_KERNEL_CMDLINE += usbcore.autosuspend=7 androidboot.usbcontroller=a600000.dwc3 
+BOARD_KERNEL_CMDLINE += usbcore.autosuspend=7 androidboot.usbcontroller=a600000.dwc3
 BOARD_KERNEL_CMDLINE += swiotlb=2048
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
@@ -145,5 +145,4 @@ TW_USE_LEDS_HAPTICS := true
 TW_INCLUDE_FUSE_EXFAT := true
 TW_INCLUDE_FUSE_NTFS := true
 TARGET_OTA_ASSERT_DEVICE := violet
-
-
+TW_EXCLUDE_TWRPAPP := true
