@@ -25,6 +25,12 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
+import init.qcom.power.rc
+
+on early-init
+    # Disable EAS
+    write /proc/sys/kernel/sched_energy_aware 0
+
 on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
@@ -96,7 +102,6 @@ service keymaster-4-0 /sbin/android.hardware.keymaster@4.0-service-qti
     seclabel u:r:recovery:s0
 
 on boot
-    setprop sys.usb.config mtp,adb
     setprop sys.usb.config adb
 
 on property:crypto.ready=0
