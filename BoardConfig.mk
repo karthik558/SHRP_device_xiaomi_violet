@@ -152,3 +152,5 @@ TW_USE_LEDS_HAPTICS := true
 TW_INCLUDE_FUSE_EXFAT := true
 TW_INCLUDE_FUSE_NTFS := true
 TARGET_OTA_ASSERT_DEVICE := violet
+# TORCH
+PB_TORCH_PATH := "/sys/class/leds/led:torch_0"
