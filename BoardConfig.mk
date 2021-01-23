@@ -174,3 +174,29 @@ SHRP_STATUSBAR_LEFT_PADDING := 40
 SHRP_NOTCH := true
 SHRP_DARK := true
 SHRP_OFFICIAL := true
+SHRP_EXPRESS := true
+
+SHRP_SKIP_DEFAULT_ADDON_4 := true
+
+INC_IN_REC_ADDON_1 := true
+INC_IN_REC_ADDON_2 := true
+INC_IN_REC_ADDON_3 := true
+INC_IN_REC_MAGISK := true
+
+# Add custom add-ons
+
+SHRP_EXTERNAL_ADDON_PATH := "device/xiaomi/violet/addons/"
+
+SHRP_EXTERNAL_ADDON_1_NAME := "Disable Force Encryption-v3"
+SHRP_EXTERNAL_ADDON_1_INFO := "Disable Force Encryption in all android versions"
+SHRP_EXTERNAL_ADDON_1_FILENAME := "Disable_Force_Encryption-v3.zip"
+SHRP_EXTERNAL_ADDON_1_BTN_TEXT := "Disable"
+SHRP_EXTERNAL_ADDON_1_SUCCESSFUL_TEXT := "Disabled-Encryption Successfuly"
+SHRP_INC_IN_REC_EXTERNAL_ADDON_1 := true
+
+SHRP_EXTERNAL_ADDON_2_NAME := "Stock Recovery Deactivation"
+SHRP_EXTERNAL_ADDON_2_INFO := "SHRP will not be replaced after flashing roms like miui and pe with this patch"
+SHRP_EXTERNAL_ADDON_2_FILENAME := "Disable_Dm-Verity_Enfec.zip"
+SHRP_EXTERNAL_ADDON_2_BTN_TEXT := "Patch"
+SHRP_EXTERNAL_ADDON_2_SUCCESSFUL_TEXT := "Successful"
+SHRP_INC_IN_REC_EXTERNAL_ADDON_2 := true
