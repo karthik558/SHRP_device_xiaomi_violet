@@ -24,4 +24,27 @@ It was announced in February 2019 and released in March 2019.
 
 ## Device picture
 
-![Xiaomi Redmi Note 7 Pro](https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/963828ec47b99ac1b057289517bed959.jpg)
+![Xiaomi Redmi Note 7 Pro](https://i01.appmifile.com/webfile/globalimg/products/pc/redmi-note-7-pro/gallery1.jpg "Redmi Note 7 Pro")
+
+### Copyright
+ ```
+  /*
+  *  Copyright (C) 2013-2020 The TWRP
+  *
+  *  Copyright (C) 2019-2021 SkyHawk Recovery Project*
+  * This program is free software: you can redistribute it and/or modify
+  * it under the terms of the GNU General Public License as published by
+  * the Free Software Foundation, either version 3 of the License, or
+  * (at your option) any later version.
+  *
+  * This program is distributed in the hope that it will be useful,
+  * but WITHOUT ANY WARRANTY; without even the implied warranty of
+  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  * GNU General Public License for more details.
+  *
+  * You should have received a copy of the GNU General Public License
+  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  *
+  */
+  ```
+
